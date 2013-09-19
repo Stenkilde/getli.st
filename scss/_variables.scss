@@ -15,6 +15,7 @@
 * LAYOUT header, footer, wrapper, etc.
 */
 
+  
 // Screen Sizes
 $screen-small: 768px;
 $screen-medium: 1280px;
@@ -36,6 +37,12 @@ $base-line-height: 150% !default;
 $em-base: 16 !default;
 $text-direction: ltr !default;
 
+//emCalcs go here
+
+
+
+
+
 // NOTE: No need to change this conditional statement, $text-direction variable controls it all.
 $default-float: left !default;
 $opposite-direction: right !default;
@@ -50,4 +57,4 @@ $opposite-direction: right !default;
 // Colour Variables
 
 $main-brand: #00a0a2;
-$secondary-brand: #ed0d6b;
+$secondary-brand: #DD5827;

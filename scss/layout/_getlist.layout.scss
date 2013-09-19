@@ -1,0 +1,28 @@
+/*
+* Layout for getlist over all
+*/
+
+.main-block { 
+	width:100%;
+	max-width:1024px;
+	margin:0 auto;
+	background-color: tomato; 
+}
+
+.loginarea-module {
+	width:100%;
+	max-width:512px;
+	min-width:160px;
+	float:left;
+}
+
+.information-module {
+	width: 100%;
+	max-width: 512px;
+	min-width:160px;
+	float:right;
+}
+
+.clearfix {
+	@include clearfix;
+}
