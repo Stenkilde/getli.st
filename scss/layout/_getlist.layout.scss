@@ -4,7 +4,7 @@
 
 .main-block { 
 	width:100%;
-	max-width:1024px;
+	max-width:1030px;
 	margin:0 auto;
 	background-color: tomato; 
 }
@@ -12,15 +12,13 @@
 .loginarea-module {
 	width:100%;
 	max-width:512px;
-	min-width:160px;
-	float:left;
+	display:inline-block;
 }
 
 .information-module {
 	width: 100%;
 	max-width: 512px;
-	min-width:160px;
-	float:right;
+	display: inline-block;
 }
 
 .clearfix {
