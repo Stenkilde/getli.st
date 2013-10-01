@@ -37,6 +37,9 @@ $base-line-height: 150% !default;
 $em-base: 16 !default;
 $text-direction: ltr !default;
 
+$musketregular:		'musketregular', helvetica, arial, sans-serif;
+$musketbold:		'musketbold', helvetica, arial, sans-serif;
+
 //emCalcs go here
 
 
@@ -60,3 +63,4 @@ $main-brand: #00a0a2;
 $secondary-brand: #DD5827;
 
 $main-dark: #272727;
+$secondary-dark: #303030;

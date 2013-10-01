@@ -2,3 +2,20 @@
 *This file is for styling fonts, font-size, line-height etc. COLOURS SHOULD GO INTO theme FOLDERS!
 */
 
+/* --------------------------------------------------------------------------------------------*\
+    $THIS IS THE THEME FOR THE LOGO - CHANGE BRAND COLOURS IN VARIABLES AND INSERT THEM HERE!
+\* --------------------------------------------------------------------------------------------*/
+
+h1.logo {
+	font-family:$musketbold;
+	font-size:50px;
+	color:#fff;
+	span {
+		color:$main-brand;
+	}
+}
+
+p {
+	font-family: helvetica;
+	line-height:$base-line-height; 
+}
