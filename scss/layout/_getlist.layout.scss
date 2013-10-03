@@ -11,13 +11,11 @@
 .loginarea-module {
 	width:100%;
 	max-width:512px;
-	float: left;
 	display:inline-block;
 	.login {
 		margin:0 auto;
 		width:50%;
-		text-align: center;
-		font-size: 15px; 
+		font-size: emCalc(15);
 	}
 }
 
@@ -25,10 +23,13 @@
 	width: 100%;
 	max-width: 512px;
 	display: inline-block;
-	float: right;
 }
+
+.footer {
+	background-color: $secondary-dark; 
+}
+
 
 .clearfix {
 	@include clearfix;
 }
-

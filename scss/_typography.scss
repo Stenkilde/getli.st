@@ -8,10 +8,30 @@
 
 h1.logo {
 	font-family:$musketbold;
-	font-size:50px;
+	font-size:emCalc(50);
 	color:#fff;
 	span {
 		color:$main-brand;
+	}
+}
+
+.footer {
+	width:100%;
+	padding:15px;
+	a.logo {
+		display:block;
+		font-family:$musketbold;
+		font-size:emCalc(12);
+		color:#fff;
+		text-align:center;
+		text-decoration:none;
+		span {
+			color: $main-brand;
+		}
+	}
+	a:hover {
+		span {
+		}
 	}
 }
 
