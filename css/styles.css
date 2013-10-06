@@ -1,7 +1,7 @@
 /*
 Syntax error: File to import not found or unreadable: mixins.
               Load paths:
-                /Users/emilrmoeller
+                /Applications/MAMP/htdocs/ddb-vw-local
                 /Applications/MAMP/htdocs/Githubs/getli.st/scss
         on line 2 of /Applications/MAMP/htdocs/Githubs/getli.st/scss/styles.scss
 
@@ -68,4 +68,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: mixins.\A               Load paths:\A                 /Users/emilrmoeller\A                 /Applications/MAMP/htdocs/Githubs/getli.st/scss\A         on line 2 of /Applications/MAMP/htdocs/Githubs/getli.st/scss/styles.scss\A \A 1: @import\A 2: 	\"mixins\",\A 3:     \"variables\",\A 4:     \"base\",\A 5:     \"typography\",\A 6:     \"modules/modules\",\A 7:     \"states\","; }
+  content: "Syntax error: File to import not found or unreadable: mixins.\A               Load paths:\A                 /Applications/MAMP/htdocs/ddb-vw-local\A                 /Applications/MAMP/htdocs/Githubs/getli.st/scss\A         on line 2 of /Applications/MAMP/htdocs/Githubs/getli.st/scss/styles.scss\A \A 1: @import\A 2: 	\"mixins\",\A 3:     \"variables\",\A 4:     \"base\",\A 5:     \"typography\",\A 6:     \"modules/modules\",\A 7:     \"states\","; }
