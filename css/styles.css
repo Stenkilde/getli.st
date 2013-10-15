@@ -1,76 +1,271 @@
 /*
-Syntax error: File to import not found or unreadable: buttons.module.
-              Load paths:
-                /Users/emilrmoeller
-                /Applications/MAMP/htdocs/Githubs/getli.st/scss
-        on line 13 of /Applications/MAMP/htdocs/Githubs/getli.st/scss/modules/_modules.scss
-        from line 6 of /Applications/MAMP/htdocs/Githubs/getli.st/scss/styles.scss
-
-8:     "layout/getlist.layout",
-9:     "layout/grid.layout",
-10:     "layout/block-grid.layout",
-11:     "themes/getlist.theme";
-
-Backtrace:
-/Applications/MAMP/htdocs/Githubs/getli.st/scss/modules/_modules.scss:13
-/Applications/MAMP/htdocs/Githubs/getli.st/scss/styles.scss:6
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/import_node.rb:67:in `import'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/import_node.rb:28:in `imported_file'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/import_node.rb:37:in `css_import?'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:217:in `visit_import'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:227:in `visit_import'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:227:in `map'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:227:in `visit_import'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:128:in `visit_root'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/engine.rb:315:in `_render'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/engine.rb:262:in `render'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:362:in `update_stylesheet'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:203:in `update_stylesheets'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `each'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:283:in `watch'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:117:in `initialize_adapter'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/vendor/listen/lib/listen/adapter.rb:198:in `call'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/darwin.rb:38:in `start'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/darwin.rb:38:in `initialize'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/darwin.rb:38:in `new'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/darwin.rb:38:in `start'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:44:in `start'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:291:in `watch'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin.rb:107:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin.rb:107:in `method_missing'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/exec.rb:455:in `watch_or_update'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/exec.rb:318:in `process_result'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/exec.rb:41:in `parse'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/sass:9
-/usr/bin/sass:19:in `load'
-/usr/bin/sass:19
+ * Mixins and functions libary
+ *
+ * @author Full Name of Author <author@email.com>
+ * @version yyy-mm-dd (Date of latest edit)
+ */
+/*
+ * Base styling. example: link base styling, base font size etc.
+ *
+ * @author Full Name of Author <author@email.com>
+ * @version yyy-mm-dd (Date of latest edit)
+ */
+/*******************************************/
+/* CONTENTS */
+/*******************************************/
+/*
+* RESET Reset default browser styling
+* SHARED Shared elements across modules and layout
+* MAIN html, body
+* LAYOUT header, footer, wrapper, etc.
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: buttons.module.\A               Load paths:\A                 /Users/emilrmoeller\A                 /Applications/MAMP/htdocs/Githubs/getli.st/scss\A         on line 13 of /Applications/MAMP/htdocs/Githubs/getli.st/scss/modules/_modules.scss\A         from line 6 of /Applications/MAMP/htdocs/Githubs/getli.st/scss/styles.scss\A \A 8:     \"layout/getlist.layout\",\A 9:     \"layout/grid.layout\",\A 10:     \"layout/block-grid.layout\",\A 11:     \"themes/getlist.theme\";"; }
+@font-face {
+  font-family: "musketregular";
+  src: url(/fonts/"musketregular-webfont.eot");
+  src: url(/fonts/"musketregular-webfont.eot?#iefix") format("embedded-opentype"), url(/fonts/"musketregular-webfont.woff") format("woff"), url(/fonts/"musketregular-webfont.ttf") format("truetype"), url(/fonts/"musketregular-webfont.svg#musketregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "musketbold";
+  src: url(/fonts/"musketbold-webfont.eot");
+  src: url(/fonts/"musketbold-webfont.eot?#iefix") format("embedded-opentype"), url(/fonts/"musketbold-webfont.woff") format("woff"), url(/fonts/"musketbold-webfont.ttf") format("truetype"), url(/fonts/"musketbold-webfont.svg#musketbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  position: relative;
+}
+
+img, object, embed {
+  max-width: 100%;
+  height: auto;
+}
+
+object, embed {
+  height: 100%;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* CSS3 PIE - IE8 Support */
+.ie-pie {
+  -pie-lazy-init: true;
+  -pie-png-fix: true;
+}
+
+.ie .fb-popup-tpl-overlay {
+  filter: none;
+  -pie-background: rgba(255, 255, 255, 0.6);
+}
+
+.ie8 .fb-popup-tpl-overlay {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+/*
+*This file is for styling fonts, font-size, line-height etc. COLOURS SHOULD GO INTO theme FOLDERS!
+*/
+/* --------------------------------------------------------------------------------------------*\
+    $THIS IS THE THEME FOR THE LOGO - CHANGE BRAND COLOURS IN VARIABLES AND INSERT THEM HERE!
+\* --------------------------------------------------------------------------------------------*/
+h1.logo {
+  font-family: "musketbold", helvetica, arial, sans-serif;
+  font-size: 3.125em;
+  color: #fff;
+}
+h1.logo span {
+  color: #00a0a2;
+}
+
+.footer {
+  width: 100%;
+  padding: 15px;
+}
+.footer a.logo {
+  display: block;
+  font-family: "musketbold", helvetica, arial, sans-serif;
+  font-size: 0.75em;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+.footer a.logo span {
+  color: #00a0a2;
+}
+
+p {
+  font-family: helvetica;
+  line-height: 150%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.btn-login {
+  color: #ffffff;
+  background-color: #4097C8;
+  border: none;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btn-login:hover {
+  background-color: #246DA3;
+}
+
+.btn-succes {
+  color: #ffffff;
+  background-color: #1abc9c;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btn-succes:hover {
+  background-color: #16a085;
+}
+
+.btn-optin {
+  color: #ffffff;
+  background-color: #ffcc00;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btn-optin:hover {
+  background-color: #d2b231;
+}
+
+.btn-danger {
+  color: #ffffff;
+  background-color: #c95a5d;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btn-danger:hover {
+  background-color: #bd362f;
+}
+
+/*
+ * Css for js interaktion states
+ *
+ * @author Full Name of Author <author@email.com>
+ * @version yyy-mm-dd (Date of latest edit)
+ */
+/*******************************************/
+/* CONTENTS */
+/*******************************************/
+/*
+* RESET Reset default browser styling
+* SHARED Shared elements across modules and layout
+* MAIN html, body
+* LAYOUT header, footer, wrapper, etc.
+*/
+/*
+* Layout for getlist over all
+*/
+.main-block {
+  width: 100%;
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.loginarea-module {
+  width: 100%;
+  max-width: 512px;
+  display: inline-block;
+}
+.loginarea-module .login {
+  margin: 0 auto;
+  width: 50%;
+  font-size: 0.9375em;
+}
+
+.information-module {
+  width: 100%;
+  max-width: 512px;
+  display: inline-block;
+}
+
+.footer {
+  background-color: #303030;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * Base styling. example: link base styling, base font size etc.
+ *
+ * @author Full Name of Author <author@email.com>
+ * @version yyy-mm-dd (Date of latest edit)
+ */
+/*******************************************/
+/* CONTENTS */
+/*******************************************/
+/*
+* RESET Reset default browser styling
+* SHARED Shared elements across modules and layout
+* MAIN html, body
+* LAYOUT header, footer, wrapper, etc.
+*/
+body {
+  background-color: #272727;
+}
+
+.information-module {
+  padding: 50px;
+}
+
+.information-text {
+  color: #fff;
+}
