@@ -19,17 +19,26 @@
 <!--[if IE 9]><body class="ie ie9"><![endif]-->
 <!--[if !IE]><!--><body><!--<![endif]-->
 	<div class="app">
+	<div class="popup-container">
+		<div class="popup">
+			<span class="ui-btn-close">X</span>
+			<h4 class="popup-heading">Type in your email and sign up for the beta!</h4>
+			<input type="text" placeholder="Type email here">
+			<input type="submit"class="btn btn-login" value="Enroll today!">
+		</div>
+	</div>
 		<div class="container main-block">
 			<header class="header">
-				<h1 class="logo">GET<span class="logoalternate">LI.ST</span></h1>	
+				<h1 class="logo">get<span class="logoalternate">li.st</span></h1>	
 			</header>
 				<div class="loginarea-module large-6 columns">
 					<form>
 						<input type="password" class="login" placeholder="Enter your password here">
-						<input type="submit"class="btn btn-login" value="Login">
-						<a href="views/view1.html" class="btn btn-optin">OptIn for Beta</a>
+						<input type="submit" class="btn btn-login" value="Login">
+						<a href="views/view1.html" id="optin" class="btn btn-optin">OptIn for Beta</a>
 					</form>
 				</div>
+
 				<div class="information-module large-6 columns">
 					<p class="information-text">Denne tekst er meget informativ, og hvis du ikke forstår den.
 					Så får du et problem, da den er ultra mega meget informativ og hvis man ikke forstår den, er man
