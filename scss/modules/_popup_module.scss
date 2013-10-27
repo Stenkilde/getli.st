@@ -36,7 +36,16 @@
 	position:absolute;
 	top: -20px;
 	right: -10px;
-	font-size: emCalc(30);
+	font-size: emCalc(15);
+	width: 30px;
+	height: 30px;
 	z-index:5;
-	background-color:blue;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.icon-close:before {
+	position: absolute;
+	top: 7px;
+	left: 6px;
 }
