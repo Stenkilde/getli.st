@@ -116,21 +116,6 @@ img {
   vertical-align: middle;
 }
 
-/* CSS3 PIE - IE8 Support */
-.ie-pie {
-  -pie-lazy-init: true;
-  -pie-png-fix: true;
-}
-
-.ie .fb-popup-tpl-overlay {
-  filter: none;
-  -pie-background: rgba(255, 255, 255, 0.6);
-}
-
-.ie8 .fb-popup-tpl-overlay {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-}
-
 /* ------------------------------------------ *\
     $font import
 \* ------------------------------------------ */
@@ -224,6 +209,7 @@ p {
 
 .btn {
   display: inline-block;
+  width: 100%;
   padding: 4px 12px;
   margin-bottom: 0;
   font-size: 14px;

@@ -195,16 +195,3 @@ img {
     display: inline-block;
     vertical-align: middle;
 }
-
-/* CSS3 PIE - IE8 Support */
-.ie-pie {
-    -pie-lazy-init:true;
-    -pie-png-fix:true;
-}
-.ie .fb-popup-tpl-overlay {
-    filter:none;
-    -pie-background:rgba(255,255,255,0.6);
-}
-.ie8 .fb-popup-tpl-overlay {
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
-}
