@@ -1,6 +1,7 @@
 <?php
 //Include backend/init.php
 require 'backend/init.php';
+require 'backend/register.php';
 ?>
 
 <!DOCTYPE html>
