@@ -40,12 +40,12 @@ if(isset($_GET['register']) && $_GET['register'] == 'success')) {
 ?>
 
 <form class="create-profile activated">
-	<input type="password" id="userpassword">
-	<input type="text" id="useremail">
+	<input type="text" id="useremail" placeholder="Email">
+	<input type="password" id="userpassword" placeholder="Password">
 
 	<?php
 		if(empty($errors) === false) {
-			echo '<p>' . implode('</p><p>', $errors) . '</p>';
+			echo '<div><p>' . implode('</p><p>', $errors) . '</p></div>';
 		}
 	?>
 
