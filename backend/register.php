@@ -37,11 +37,16 @@ if(isset($_GET['register']) && $_GET['register'] == 'success')) {
 	echo 'Thank you for registering. Please check your email.';
 }
 
-
-
-
-
-
-
-
 ?>
+
+<form class="create-profile activated">
+	<input type="password" id="userpassword">
+	<input type="text" id="useremail">
+
+	<?php
+		if(empty($errors) === false) {
+			echo '<p>' . implode('</p><p>', $errors) . '</p>';
+		}
+	?>
+
+</form>
