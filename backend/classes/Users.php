@@ -1,7 +1,7 @@
 <?php
 class Users {
 
-	private $db<php
+	private $db
 
 	public function __contruct($database) {
 		$this->db = $database;
