@@ -116,6 +116,10 @@ img {
   vertical-align: middle;
 }
 
+.app {
+  padding: 15px;
+}
+
 /* ------------------------------------------ *\
     $font import
 \* ------------------------------------------ */
@@ -336,6 +340,9 @@ ul {
   color: #fff;
 }
 
+.login-module {
+  position: relative;
+}
 .login-module input {
   display: block;
   width: 100%;
