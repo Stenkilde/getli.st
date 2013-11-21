@@ -34,30 +34,42 @@ html,body{
 h1, .alpha {
     font-size: $h1-size;
     line-height:1;
+    color: #fff;
+    font-family: arial; 
 }
 
 h2, .beta {
     font-size: $h2-size;
     line-height:1;
+    color: #fff;
+    font-family: arial;
 }
 
 h3, .gamma {
     font-size: $h3-size;
     line-height:1;
+    color: #fff;
+    font-family: arial;
 }
 
 h4, .delta {
     font-size: $h4-size;
     line-height:1;
+    color: #fff;
+    font-family: arial;
 }
 
 h5, .epsilon{
     font-size: $h5-size;
     line-height:1;
+    color: #fff;
+    font-family: arial;
 }
 h6, .zeta{
     font-size: $h6-size;
     line-height:1;
+    color: #fff;
+    font-family: arial;
 }
 
 p {
@@ -66,7 +78,8 @@ p {
 }
 
 a {
-    color: pink;
+    color: #fff;
+    font-family: arial;
 }
 
 

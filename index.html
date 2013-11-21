@@ -57,12 +57,12 @@
 	<script src="js/app.js"></script>
 	<script>
 		$("#account-exists").click(function(){
-		  $(".create-profile").fadeOut('fast');
-		  $(".login-user").fadeIn('slow');
+		  $(".create-profile").toggleClass('activated');
+		  $(".login-user").toggleClass('activated');
 		});
 		$("#account-none").click(function(){
-			$(".login-user").fadeOut('fast');
-			$(".create-profile").fadeIn('slow');
+			$(".login-user").toggleClass('activated');
+			$(".create-profile").toggleClass('activated');
 		});
 	</script>
 </body>

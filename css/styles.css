@@ -134,35 +134,48 @@ html, body {
 h1, .alpha {
   font-size: 1.625em;
   line-height: 1;
+  color: #fff;
+  font-family: arial;
 }
 
 h2, .beta {
   font-size: 1.25em;
   line-height: 1;
+  color: #fff;
+  font-family: arial;
 }
 
 h3, .gamma {
   font-size: 1.125em;
   line-height: 1;
+  color: #fff;
+  font-family: arial;
 }
 
 h4, .delta {
   font-size: 1em;
   line-height: 1;
+  color: #fff;
+  font-family: arial;
 }
 
 h5, .epsilon {
   font-size: 0.875em;
   line-height: 1;
+  color: #fff;
+  font-family: arial;
 }
 
 h6, .zeta {
   font-size: 0.75em;
   line-height: 1;
+  color: #fff;
+  font-family: arial;
 }
 
 a {
-  color: pink;
+  color: #fff;
+  font-family: arial;
 }
 
 /* ------------------------------------------ *\
@@ -329,6 +342,15 @@ ul {
   padding: 10px;
   font-size: 20px;
   margin: 10px 0;
+}
+.login-module #account-exists,
+.login-module #account-none {
+  text-decoration: none;
+  color: #fff;
+}
+.login-module #account-exists:hover,
+.login-module #account-none:hover {
+  text-decoration: underline;
 }
 .login-module .create-profile {
   display: none;
