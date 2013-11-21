@@ -177,29 +177,13 @@ a {
 /*
 * Here you want to put all your more special font styling
 */
-.logo {
-  font-family: 'musketbold';
-  font-size: 3.125em;
-  color: #fff;
-}
-.logo span {
-  color: #00a0a2;
-}
-
 .footer {
   width: 100%;
-  padding: 15px;
-}
-.footer .logo {
-  display: block;
-  font-family: 'musketbold';
-  font-size: 0.75em;
-  color: #fff;
+  max-height: 80px;
   text-align: center;
-  text-decoration: none;
 }
-.footer .logo span {
-  color: #00a0a2;
+.footer img {
+  height: 80px;
 }
 
 p {
@@ -361,6 +345,14 @@ ul {
 }
 .login-module .login-user.activated {
   display: block;
+}
+
+.centered {
+  text-align: center;
+}
+
+.logo {
+  max-width: 300px;
 }
 
 /*

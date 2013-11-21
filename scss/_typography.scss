@@ -87,32 +87,13 @@ a {
 /*
 * Here you want to put all your more special font styling
 */
-.logo {
-	font-family:'musketbold';
-	font-size:emCalc(50);
-	color:#fff;
-	span {
-		color:$main-brand;
-	}
-}
 
 .footer {
 	width:100%;
-	padding:15px;
-	.logo {
-		display:block;
-		font-family:'musketbold';
-		font-size:emCalc(12);
-		color:#fff;
-		text-align:center;
-		text-decoration:none;
-		span {
-			color: $main-brand;
-		}
-	}
-	a:hover {
-		span {
-		}
+	max-height: 80px;
+	text-align: center;
+	img {
+		height: 80px;
 	}
 }
 
