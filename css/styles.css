@@ -167,63 +167,6 @@ p {
   line-height: 150%;
 }
 
-ul {
-  /*This is a UL reset*/
-  text-decoration: none;
-  list-style-type: none;
-  color: #fff;
-}
-
-.popup-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: none;
-}
-
-.popup {
-  width: 330px;
-  background-color: #FFF;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: auto;
-  padding: 10px;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.popup h4 {
-  font-family: arial;
-  font-size: 0.875em;
-}
-
-.ui-btn-close {
-  position: absolute;
-  top: -20px;
-  right: -10px;
-  font-size: 0.9375em;
-  width: 30px;
-  height: 30px;
-  z-index: 5;
-  background-color: #fff;
-  border-radius: 50%;
-}
-
-.icon-close:before {
-  position: absolute;
-  top: 7px;
-  left: 6px;
-}
-
 .btn {
   display: inline-block;
   padding: 4px 12px;
@@ -296,6 +239,63 @@ ul {
 
 .btn-danger:hover {
   background-color: #bd362f;
+}
+
+.popup-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.popup {
+  width: 330px;
+  background-color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  padding: 10px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.popup h4 {
+  font-family: arial;
+  font-size: 0.875em;
+}
+
+.ui-btn-close {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  font-size: 0.9375em;
+  width: 30px;
+  height: 30px;
+  z-index: 5;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.icon-close:before {
+  position: absolute;
+  top: 7px;
+  left: 6px;
+}
+
+ul {
+  /*This is a UL reset*/
+  text-decoration: none;
+  list-style-type: none;
+  color: #fff;
 }
 
 /*
