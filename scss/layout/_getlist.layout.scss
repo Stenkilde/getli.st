@@ -33,3 +33,18 @@
 .clearfix {
 	@include clearfix;
 }
+
+body {
+	background-color: $main-dark; 
+}
+
+.main-block {
+}
+
+.information-module {
+	padding:50px;
+}
+
+.information-text {
+	color:#fff;
+}
