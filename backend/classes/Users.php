@@ -45,15 +45,10 @@ class Users {
 		try {
 			$query->execute();
 
-			//Mail Message Here
+			// mail($email, 'Please activate your account', "Hello " . $username. ",\r\nThank you for registering with us. Please visit the link below so we can activate your account:\r\n\r\nhttp://getli.st/activate.php?email=" . $email . "&email_code=" . $email_code . "\r\n\r\n-- The Getli.st Team");
 		} catch(PODException $e) {
 			die($e->getMessage());
 		}
-
-
-
 	}
-
-
 }
 ?>
