@@ -1,74 +1,52 @@
+$btn-padding: 4px 12px;
+
 .btn {
-	display: inline-block;
 	width: 100%;
-	padding: 4px 12px;
-	margin-bottom: 0;
-	font-size: 14px;
+	padding: $btn-padding;
+	font-size: $btn-font-size;
 	line-height: 20px;
-	color: #333333;
-	font-family: arial;
+	color: #fff;
+	font-family: $family-arial;
 	text-align: center;
-	vertical-align: middle;
 	text-decoration:none;
 	cursor: pointer;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
+	-o-transition:.2s;
+	-ms-transition:.2s;
+	-moz-transition:.2s;
+	-webkit-transition:.2s;
+	transition:.2s;
 }
 
 .btn-login {
-	color: #ffffff;
 	background-color: #4097C8;
-	border:none;
-	-o-transition:.2s;
-	-ms-transition:.2s;
-	-moz-transition:.2s;
-	-webkit-transition:.2s;
-	transition:.2s;
+	&:hover {
+		background-color: #246DA3;
+	}
 }
 
-.btn-login:hover {
-	background-color: #246DA3;
-}
 
 .btn-succes {
-	color: #ffffff;
 	background-color: #1abc9c;
-	-o-transition:.2s;
-	-ms-transition:.2s;
-	-moz-transition:.2s;
-	-webkit-transition:.2s;
-	transition:.2s;
+	&:hover {
+		background-color: #16a085;
+	}
 }
 
-.btn-succes:hover {
-	background-color: #16a085;
-}
 
 .btn-optin {
-	color: #ffffff;
 	background-color: #ffcc00;
-	-o-transition:.2s;
-	-ms-transition:.2s;
-	-moz-transition:.2s;
-	-webkit-transition:.2s;
-	transition:.2s;
+	&:hover {
+		background-color: #d2b231;
+	}
 }
 
-.btn-optin:hover {
-	background-color: #d2b231;
-}
 
 .btn-danger {
-	color: #ffffff;
 	background-color: #c95a5d;
-	-o-transition:.2s;
-	-ms-transition:.2s;
-	-moz-transition:.2s;
-	-webkit-transition:.2s;
-	transition:.2s;
-}
-
-.btn-danger:hover {
-	background-color: #bd362f;
+	&:hover {
+		background-color: #bd362f;
+	}
 }

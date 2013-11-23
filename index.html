@@ -31,17 +31,17 @@
 			</header>
 				<section class="row main">
 					<div class="column large-12 login-module">
-						<form class="create-profile activated">
-							<input type="text" id="useremail" placeholder="Email">
-							<input type="password" id="userpassword" placeholder="Password">
+						<form class="create-profile is-visible">
+							<input type="text" id="userEmail" class="login" placeholder="Email">
+							<input type="password" id="userPassword" class="login" placeholder="Password">
 							<a href="#" class="btn btn-succes">Create my Account!</a>
-							<a href="#" id="account-exists">I already have an account</a>
+							<a href="#" id="accountExists">I already have an account</a>
 						</form>
 						<form class="login-user">
-							<input type="text" id="useremail" placeholder="Email">
-							<input type="password" id="userpassword" placeholder="Password">
+							<input type="text" id="userEmail" class="login" placeholder="Email">
+							<input type="password" id="userPassword" class="login" placeholder="Password">
 							<a href="#" class="btn btn-login">Log me in!</a>
-							<a href="#" id="account-none">I changed my mind! I need a profile!</a>
+							<a href="#" id="accountNone">I changed my mind! I need a profile!</a>
 						</form>
 					</div>
 				</section>
@@ -53,13 +53,11 @@
 	<!--[if IE]><script src="/js/vendor/PIE.js"></script><![endif]-->
 	<script src="js/app.js"></script>
 	<script>
-		$("#account-exists").click(function(){
-		  $(".create-profile").toggleClass('activated');
-		  $(".login-user").toggleClass('activated');
+		$("#accountExists").click(function(){
+		  $(".create-profile, .login-user").toggleClass('is-visible');
 		});
-		$("#account-none").click(function(){
-			$(".login-user").toggleClass('activated');
-			$(".create-profile").toggleClass('activated');
+		$("#accountNone").click(function(){
+			$(".login-user, .create-profile").toggleClass('is-visible');
 		});
 	</script>
 </body>

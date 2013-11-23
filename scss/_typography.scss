@@ -25,6 +25,9 @@ $h3-size:           emCalc(18) !default; // .gamma
 $h4-size:           emCalc(16) !default; // .delta
 $h5-size:           emCalc(14) !default; // .epsilon
 $h6-size:           emCalc(12) !default; // .zeta
+$btn-font-size:     emCalc(14) !default;
+
+$family-arial:      'arial';
 
 html,body{
     font-size: $base-font-size;
