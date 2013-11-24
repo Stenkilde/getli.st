@@ -334,19 +334,13 @@ ul {
 .login-module #account-none:hover {
   text-decoration: underline;
 }
-.login-module .create-profile {
-  display: none;
-  max-width: 350px;
-  margin: 0 auto;
-}
-.login-module .create-profile.is-visible {
-  display: block;
-}
+.login-module .create-profile,
 .login-module .login-user {
   display: none;
   max-width: 350px;
   margin: 0 auto;
 }
+.login-module .create-profile.is-visible,
 .login-module .login-user.is-visible {
   display: block;
 }

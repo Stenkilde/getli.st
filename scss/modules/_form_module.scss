@@ -20,7 +20,8 @@
 		}
 
 	}	
-	.create-profile {
+	.create-profile,
+	.login-user {
 		display: none;
 		max-width: 350px;
 		margin: 0 auto;
@@ -31,12 +32,4 @@
 		}
 	}
 
-	.login-user {
-		display: none;
-		max-width: 350px;
-		margin: 0 auto;	
-		&.is-visible {
-			display: block;
-		}
-	}
 }
