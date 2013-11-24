@@ -19,12 +19,7 @@ require 'header.php';
 				<section class="row main">
 					<div class="column large-12 login-module">
 						<?php include 'backend/register.php'; ?>
-						<form class="login-user">
-							<input type="text" id="userEmail" class="login" placeholder="Email">
-							<input type="password" id="userPassword" class="login" placeholder="Password">
-							<input method="post" class="btn btn-login" value="Log me in!">
-							<a href="#" id="accountNone">I changed my mind! I need a profile!</a>
-						</form>
+						<?php include 'backend/login.php'; ?>
 					</div>
 				</section>
 			<!--What does the fox say?-->

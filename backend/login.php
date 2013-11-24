@@ -29,3 +29,10 @@ if(empty($_POST) === false) {
 }
 
 ?>
+
+<form class="login-user">
+	<input type="text" id="userEmail" class="login" placeholder="Email">
+	<input type="password" id="userPassword" class="login" placeholder="Password">
+	<input method="post" class="btn btn-login" value="Log me in!">
+	<a href="#" id="accountNone">I changed my mind! I need a profile!</a>
+</form>
