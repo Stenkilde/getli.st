@@ -37,7 +37,7 @@ if(isset($_GET['register']) && $_GET['register'] == 'success') {
 
 ?>
 
-<form class="create-profile is-visible" method='post'>
+<form class="create-profile is-visible" method='post' action="index.php">
 	<input type="text" id="userEmail" class="login" placeholder="Email">
 	<input type="password" id="userPassword" class="login" placeholder="Password">
 	<input type="submit" class="btn btn-succes" value="Create my Account!">

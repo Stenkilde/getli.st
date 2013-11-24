@@ -9,6 +9,11 @@ if(isset($_GET['register'])) {
 } else if (isset($_GET['login'])) {
 	require 'backend/login.php';
 }
+
+if(isset($_SESSION['id']) == true) {
+	$user		= $users->userdata($_SESSION['id']);
+	$username	= $user['username'];
+}
 ?>
 
 <!DOCTYPE html>
