@@ -10,7 +10,7 @@ class Users {
 	// Check if email exit in DB
 	public function email_exists($email) {
 
-		$query = $this->db->prepare("SELECT COUNT(`id`) FROM `users` WHERE `email`=?");
+		$query = $this->db->prepare("SELECT COUNT(`uID`) FROM `users` WHERE `email`=?");
 		$query->bindValue(1, $email);
 
 		try{
@@ -54,7 +54,7 @@ class Users {
 	//Activate User
 	public function activate($email, $email_code) {
 
-		$query = $this->db->prepare("SELECT COUNT(`id`) FROM `users` WHERE `email` = ? AND `activationHash` = ? AND `activated` = ?");
+		$query = $this->db->prepare("SELECT COUNT(`uID`) FROM `users` WHERE `email` = ? AND `activationHash` = ? AND `activated` = ?");
 
 		$query->bindValue(1, $email);
 		$query->bindValue(2, $email_code);
@@ -100,6 +100,30 @@ class Users {
 			//Checking hash encrypt between passwords
 			if($stored_password === sha1($password)) {
 				return $id;
+			} else {
+				return false;
+			}
+
+		} catch(PODException $e) {
+			die($e->getMessage);
+		}
+
+	}
+
+	//Check if users account is activated
+	public function email_confirmed($username) {
+
+		$query = $this->db->prepare("SELECT COUNT(`uID`) FROM `users` WHERE `username` = ? AND `activated` = ?");
+		$query->bindValue(1, $username);
+		$query->bindValue(2, 1);
+
+		try {
+
+			$query->execute();
+			$rows = $query->fetchColumn();
+
+			if($rows == 1) {
+				return true;
 			} else {
 				return false;
 			}
