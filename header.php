@@ -1,11 +1,6 @@
 <?php
 //Include backend/init.php
 require 'backend/init.php';
-
-if(isset($_SESSION['id']) == true) {
-	$user	= $users->userdata($_SESSION['id']);
-	$email	= $user['email'];
-}
 ?>
 
 <!DOCTYPE html>
