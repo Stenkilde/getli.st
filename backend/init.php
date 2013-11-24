@@ -9,6 +9,6 @@ require 'classes/General.php';
 $users 		= new Users($db);
 $general 	= new General();
 
-$errors		array();
+$errors		= array();
 
 ?>
