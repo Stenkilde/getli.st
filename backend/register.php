@@ -1,6 +1,6 @@
 <?php
 // If form is submitted
-if(isset($_POST['submit'])) {
+if(empty($_POST) === false && isset($_POST['register']) === true) {
 
 	if(empty($_POST['email']) || empty($_POST['password'])) {
 
@@ -38,9 +38,9 @@ if(isset($_GET['register']) && $_GET['register'] == 'success') {
 ?>
 
 <form class="create-profile is-visible" method='post' action="index.php">
-	<input type="text" id="userEmail" class="login" placeholder="Email">
-	<input type="password" id="userPassword" class="login" placeholder="Password">
-	<input type="submit" class="btn btn-succes" value="Create my Account!">
+	<input type="text" name="email" id="userEmail" class="login" placeholder="Email">
+	<input type="password" name="password" id="userPassword" class="login" placeholder="Password">
+	<input type="submit" name="register" class="btn btn-succes" value="Create my Account!">
 	<a href="#" id="accountExists">I already have an account</a>
 
 	<?php if(empty($errors) === false) {

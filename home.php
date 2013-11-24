@@ -7,7 +7,8 @@ $general->logged_out_protect();
 ?>
 
 
-<h1>Hello <?php echo $username, '!'; ?></h1>
+<h1>Hello <?php echo $email, '!'; ?></h1>
+<a href="logout.php">Logout</a>
 
 
 

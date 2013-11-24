@@ -3,14 +3,14 @@ class Users {
 
 	private $db;
 
-	public function __contruct($database) {
+	public function __construct($database) {
 		$this->db = $database;
 	}
 
 	// Check if email exit in DB
 	public function email_exists($email) {
 
-		$query = $this->db->prepare("SELECT COUNT(`uID`) FROM `users` WHERE `email`=?");
+		$query = $this->db->prepare("SELECT COUNT(`uID`) FROM `users` WHERE `email`= ?");
 		$query->bindValue(1, $email);
 
 		try{
@@ -32,7 +32,7 @@ class Users {
 
 		$time			= time();
 		$ip				= $_SERVER['REMOTE_ADDR'];
-		$activationHash	= sha1($email = microtime());
+		$activationHash	= sha1($email + microtime());
 		$password		= sha1($password);
 
 		$query = $this->db->prepare("INSERT INTO `users` (`email`, `password`, `activationHash`, `timestamp`) VALUES (?, ?, ?, ?) ");
@@ -45,7 +45,7 @@ class Users {
 		try {
 			$query->execute();
 
-			// mail($email, 'Please activate your account', "Hello " . $username. ",\r\nThank you for registering with us. Please visit the link below so we can activate your account:\r\n\r\nhttp://getli.st/activate.php?email=" . $email . "&email_code=" . $email_code . "\r\n\r\n-- The Getli.st Team");
+			//mail($email, 'Please activate your account', "Hello " . $username. ",\r\nThank you for registering with us. Please visit the link below so we can activate your account:\r\n\r\nhttp://getli.st/activate.php?email=" . $email . "&email_code=" . $email_code . "\r\n\r\n-- The Getli.st Team");
 		} catch(PODException $e) {
 			die($e->getMessage());
 		}
@@ -85,10 +85,10 @@ class Users {
 	}
 
 	//Login user
-	public function login($username, $password) {
+	public function login($email, $password) {
 
-		$query = $this->db->prepare("SELECT `password`, `uID` FROM `users` WHERE `username` = ?");
-		$query->bindValue(1, $username);
+		$query = $this->db->prepare("SELECT `password`, `uID` FROM `users` WHERE `email` = ?");
+		$query->bindValue(1, $email);
 
 		try{
 
@@ -111,10 +111,10 @@ class Users {
 	}
 
 	//Check if users account is activated
-	public function email_confirmed($username) {
+	public function email_confirmed($email) {
 
-		$query = $this->db->prepare("SELECT COUNT(`uID`) FROM `users` WHERE `username` = ? AND `activated` = ?");
-		$query->bindValue(1, $username);
+		$query = $this->db->prepare("SELECT COUNT(`uID`) FROM `users` WHERE `email` = ? AND `activated` = ?");
+		$query->bindValue(1, $email);
 		$query->bindValue(2, 1);
 
 		try {
