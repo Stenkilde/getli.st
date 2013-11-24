@@ -50,5 +50,39 @@ class Users {
 			die($e->getMessage());
 		}
 	}
+
+	//Activate User
+	public function activate($email, $email_code) {
+
+		$query = $this->db->prepare("SELECT COUNT(`id`) FROM `users` WHERE `email` = ? AND `activationHash` = ? AND `activated` = ?");
+
+		$query->bindValue(1, $email);
+		$query->bindValue(2, $email_code);
+		$query->bindValue(3, 0);
+
+		try{
+
+			$query->execute();
+			$rows = $query->fetchColumn();
+
+			if($rows == 1) {
+
+				$query_2 = this->db->prepare("UPDATE `users` SET `activated` = ? WHERE `email` = ?"):
+
+				$query_2->bindValue(1, 1);
+				$query_2->bindValue(2, $email);
+
+				$query_2->execute():
+				return true;
+
+			} else {
+				return false;
+			}
+
+		} catch(PODException $e) {
+			die($e->getMessage());
+		}
+	}
+
 }
 ?>

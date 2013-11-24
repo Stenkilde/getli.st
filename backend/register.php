@@ -1,6 +1,4 @@
 <?php
-require 'init.php';
-
 // If form is submitted
 if(isset($_POST['submit'])) {
 
@@ -33,7 +31,7 @@ if(isset($_POST['submit'])) {
 	}
 }
 
-if(isset($_GET['register']) && $_GET['register'] == 'success')) {
+if(isset($_GET['register']) && $_GET['register'] == 'success') {
 	echo 'Thank you for registering. Please check your email.';
 }
 
