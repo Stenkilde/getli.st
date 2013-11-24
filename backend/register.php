@@ -44,6 +44,6 @@ if(isset($_GET['register']) && $_GET['register'] == 'success') {
 	<a href="#" id="accountExists">I already have an account</a>
 
 	<?php if(empty($errors) === false) {
-			echo '<div><p>' . implode('</p><p>', $errors) . '</p></div>';
+			echo '<div class="register-error"><p>' . implode('</p><p>', $errors) . '</p></div>';
 	} ?>
 </form>
