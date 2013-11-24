@@ -11,7 +11,7 @@ if(isset($_GET['register'])) {
 }
 
 if(isset($_SESSION['id']) == true) {
-	$user		= $users->userdata($_SESSION['id']);
+	$user	= $users->userdata($_SESSION['id']);
 	$email	= $user['email'];
 }
 ?>
