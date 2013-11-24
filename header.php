@@ -2,11 +2,11 @@
 //Include backend/init.php
 require 'backend/init.php';
 
-if($_GET['register']) {
+if(isset($_GET['register'])) {
 	require 'backend/register.php';
-} else if ($_GET['activate']) {
+} else if (isset($_GET['activate'])) {
 	require 'backend/activate.php';
-} else if ($_GET['login']) {
+} else if (isset($_GET['login'])) {
 	require 'backend/login.php';
 }
 ?>

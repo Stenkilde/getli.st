@@ -1,7 +1,7 @@
 <?php
 class Users {
 
-	private $db
+	private $db;
 
 	public function __contruct($database) {
 		$this->db = $database;
@@ -67,12 +67,12 @@ class Users {
 
 			if($rows == 1) {
 
-				$query_2 = this->db->prepare("UPDATE `users` SET `activated` = ? WHERE `email` = ?"):
+				$query_2 = $this->db->prepare("UPDATE `users` SET `activated` = ? WHERE `email` = ?");
 
 				$query_2->bindValue(1, 1);
 				$query_2->bindValue(2, $email);
 
-				$query_2->execute():
+				$query_2->execute();
 				return true;
 
 			} else {

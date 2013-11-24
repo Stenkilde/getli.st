@@ -2,7 +2,7 @@
 
 //Start User sessions
 session_start();
-require 'config.php';
+require '/connect/config.php';
 require 'classes/Users.php';
 require 'classes/General.php';
 
