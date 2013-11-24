@@ -1,6 +1,6 @@
 <?php
 //Activate Account
-if(isset($_GET['register']) === true && $_GET['register'] == 'activate') {
+if(isset($_GET['activate']) === true && $_GET['activate'] == 'yes') {
 
 	echo 'Thank you, your account has now been activated. Go ahead and login!';
 
@@ -18,7 +18,7 @@ if(isset($_GET['register']) === true && $_GET['register'] == 'activate') {
 		if(empty($errors) === false) {
 			echo '<p>' . implode('</p><p>', $errors) . '</p>';
 		} else {
-			header('Location: index.php?register=activate');
+			header('Location: index.php?activate=yes');
 			exit();
 		}
 } else {

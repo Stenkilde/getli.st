@@ -1,8 +1,14 @@
 <?php
 //Include backend/init.php
 require 'backend/init.php';
-require 'backend/register.php';
-require 'backend/activate.php';
+
+if($_GET['register']) {
+	require 'backend/register.php';
+} else if ($_GET['activate']) {
+	require 'backend/activate.php';
+} else if ($_GET['login']) {
+	require 'backend/login.php';
+}
 ?>
 
 <!DOCTYPE html>
