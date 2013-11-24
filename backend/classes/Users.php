@@ -134,5 +134,24 @@ class Users {
 
 	}
 
+	//Get user data
+	public function userdata($id) {
+
+		$query = $this->db->prepare("SELECT * FROM `users` WHERE `uID` = ?");
+		$query->bindValue(1, $id);
+
+		try {
+
+			$query->execute();
+			return $query->fetch();
+
+		} catch(PODException $e) {
+
+			die($e->getMessage);
+		
+		}
+
+	}
+
 }
 ?>
