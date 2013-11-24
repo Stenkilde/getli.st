@@ -40,7 +40,7 @@ if(isset($_GET['register']) && $_GET['register'] == 'success') {
 <form class="create-profile is-visible" method='post'>
 	<input type="text" id="userEmail" class="login" placeholder="Email">
 	<input type="password" id="userPassword" class="login" placeholder="Password">
-	<a href="#" class="btn btn-succes">Create my Account!</a>
+	<input type="submit" class="btn btn-succes">Create my Account!</a>
 	<a href="#" id="accountExists">I already have an account</a>
 
 	<?php
