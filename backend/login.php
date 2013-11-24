@@ -35,6 +35,6 @@ if(empty($_POST) === false && isset($_POST['login']) === true) {
 	<a href="#" id="accountNone">I changed my mind! I need a profile!</a>
 
 	<?php if(empty($errors) === false) {
-		echo '<p>' . implode('</p><p>', $errors) . '</p>';
+		echo '<div><p>' . implode('</p><p>', $errors) . '</p></div>';
 	} ?>
 </form>
