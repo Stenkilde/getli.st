@@ -84,5 +84,31 @@ class Users {
 		}
 	}
 
+	//Login user
+	public function login($username, $password) {
+
+		$query = $this->db->prepare("SELECT `password`, `uID` FROM `users` WHERE `username` = ?");
+		$query->bindValue(1, $username);
+
+		try{
+
+			$query->execute();
+			$data 				= $query->fetch();
+			$stored_password	= $data['password'];
+			$id					= $data['uID'];
+
+			//Checking hash encrypt between passwords
+			if($stored_password === sha1($password)) {
+				return $id;
+			} else {
+				return false;
+			}
+
+		} catch(PODException $e) {
+			die($e->getMessage);
+		}
+
+	}
+
 }
 ?>
