@@ -18,12 +18,7 @@ require 'header.php';
 			</header>
 				<section class="row main">
 					<div class="column large-12 login-module">
-						<form class="create-profile is-visible">
-							<input type="text" id="userEmail" class="login" placeholder="Email">
-							<input type="password" id="userPassword" class="login" placeholder="Password">
-							<a href="#" class="btn btn-succes">Create my Account!</a>
-							<a href="#" id="accountExists">I already have an account</a>
-						</form>
+						<?php include 'register.php'; ?>
 						<form class="login-user">
 							<input type="text" id="userEmail" class="login" placeholder="Email">
 							<input type="password" id="userPassword" class="login" placeholder="Password">
