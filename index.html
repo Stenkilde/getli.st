@@ -53,11 +53,8 @@
 	<!--[if IE]><script src="/js/vendor/PIE.js"></script><![endif]-->
 	<script src="js/app.js"></script>
 	<script>
-		$("#accountExists").click(function(){
+		$("#accountExists, #accountNone").click(function(){
 		  $(".create-profile, .login-user").toggleClass('is-visible');
-		});
-		$("#accountNone").click(function(){
-			$(".login-user, .create-profile").toggleClass('is-visible');
 		});
 	</script>
 </body>
