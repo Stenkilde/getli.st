@@ -1,11 +1,11 @@
-$btn-padding: 4px 12px;
-
 .btn {
 	width: 100%;
+	min-height: 48px;
 	padding: $btn-padding;
 	font-size: $btn-font-size;
 	line-height: 20px;
 	color: #fff;
+	border: none; // Border removal is for input fields
 	font-family: $family-arial;
 	text-align: center;
 	text-decoration:none;
