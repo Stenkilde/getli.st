@@ -9,7 +9,7 @@ class General {
 	//If logged in redirect to home.php
 	public function logged_in_protect() {
 		if($this->logged_in() === true) {
-			header('Location: ../../home.php');
+			header('Location: home.php');
 			exit();
 		}
 	}
