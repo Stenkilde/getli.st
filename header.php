@@ -2,14 +2,6 @@
 //Include backend/init.php
 require 'backend/init.php';
 
-if(isset($_GET['register'])) {
-	require 'backend/register.php';
-} else if (isset($_GET['activate'])) {
-	require 'backend/activate.php';
-} else if (isset($_GET['login'])) {
-	require 'backend/login.php';
-}
-
 if(isset($_SESSION['id']) == true) {
 	$user	= $users->userdata($_SESSION['id']);
 	$email	= $user['email'];
