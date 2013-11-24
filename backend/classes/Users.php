@@ -153,5 +153,20 @@ class Users {
 
 	}
 
+	//List all users
+	public function get_users() {
+
+		$query = $this->db->prepare("SELECT * FROM `users` ORDER BY `timestamp` DESC");
+
+		try {
+			$query->execute();
+		} catch(PODException $e) {
+			die($e->getMessage);
+		}
+
+		return $query->fetchAll();
+	
+	}
+
 }
 ?>
