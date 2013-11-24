@@ -23,9 +23,7 @@ if(empty($_POST) === false) {
 			header('Location: home.php');
 			exit();
 		}
-
 	}
-
 }
 
 ?>
