@@ -21,8 +21,8 @@ $general->logged_in_protect();
 			</header>
 				<section class="row main">
 					<div class="column large-12 login-module">
-						<?php include 'backend/register.php'; ?>
-						<?php include 'backend/login.php'; ?>
+						<?php include 'backend/register.php'; //Includes register form ?>
+						<?php include 'backend/login.php'; //Includes login form ?>
 					</div>
 				</section>
 			<!--What does the fox say?-->
