@@ -6,7 +6,7 @@ if(empty($_POST) === false) {
 	$password = trim($_POST['password']);
 
 	if(empty($username) === true || empty($password) === true) {
-		$errors[] = 'Sorry, but we need your username and password':
+		$errors[] = 'Sorry, but we need your username and password';
 	} else if ($users->user_exists($username) === false) {
 		$errors[] = 'Sorry, that username doesn\'t exist';
 	} else if ($users->email_confirmed($username) === false) {
