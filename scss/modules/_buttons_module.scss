@@ -10,7 +10,8 @@
 	text-align: center;
 	text-decoration:none;
 	cursor: pointer;
-	border-radius: 0;
+	-webkit-appearance: none;
+    border-radius: 0;
 	-o-transition:.2s;
 	-ms-transition:.2s;
 	-moz-transition:.2s;

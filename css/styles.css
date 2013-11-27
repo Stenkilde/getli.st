@@ -193,6 +193,7 @@ p {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  -webkit-appearance: none;
   border-radius: 0;
   -o-transition: .2s;
   -ms-transition: .2s;
