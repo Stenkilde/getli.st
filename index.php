@@ -21,8 +21,26 @@ require 'header.php';
 			</header>
 				<section class="row main">
 					<div class="column large-12 login-module">
-						<?php include 'backend/register.php'; //Includes register form ?>
-						<?php include 'backend/login.php'; //Includes login form ?>
+						<form class="create-profile is-visible" method='post' action="index.php">
+							<input type="text" name="email" id="userEmail" class="login" placeholder="Email">
+							<input type="password" name="password" id="userPassword" class="login" placeholder="Password">
+							<input type="submit" name="register" class="btn btn-succes" value="Create my Account!">
+							<a href="#" id="accountExists">I already have an account</a>
+
+							<?php if(empty($errors) === false) {
+									echo '<div class="register-error"><p>' . implode('</p><p>', $errors) . '</p></div>';
+							} ?>
+						</form>
+						<form class="login-user" method="post" action="index.php">
+							<input type="text" name="email" id="userEmail" class="login" placeholder="Email">
+							<input type="password" name="password" id="userPassword" class="login" placeholder="Password">
+							<input type="submit" name="login" class="btn btn-login" value="Log me in!">
+							<a href="#" id="accountNone">I changed my mind! I need a profile!</a>
+
+							<?php if(empty($errors) === false) {
+								echo '<div><p>' . implode('</p><p>', $errors) . '</p></div>';
+							} ?>
+						</form>
 					</div>
 				</section>
 			<!--What does the fox say?-->

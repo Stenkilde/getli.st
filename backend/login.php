@@ -27,14 +27,3 @@ if(empty($_POST) === false && isset($_POST['login']) === true) {
 }
 
 ?>
-
-<form class="login-user" method="post" action="index.php">
-	<input type="text" name="email" id="userEmail" class="login" placeholder="Email">
-	<input type="password" name="password" id="userPassword" class="login" placeholder="Password">
-	<input type="submit" name="login" class="btn btn-login" value="Log me in!">
-	<a href="#" id="accountNone">I changed my mind! I need a profile!</a>
-
-	<?php if(empty($errors) === false) {
-		echo '<div><p>' . implode('</p><p>', $errors) . '</p></div>';
-	} ?>
-</form>
