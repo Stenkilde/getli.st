@@ -9,7 +9,7 @@ require 'connect/config.php';
 //Require Classes
 require 'classes/Users.php';
 require 'classes/General.php';
-require 'classes/Lists.php'
+require 'classes/Lists.php';
 
 $users 		= new Users($db);
 $general 	= new General();
