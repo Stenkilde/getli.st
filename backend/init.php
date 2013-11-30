@@ -19,4 +19,8 @@ $errors		= array();
 require 'register.php';
 require 'login.php';
 
+//Logged in or logged out redirect check
+$general->logged_in_protect();
+$general->logged_out_protect();
+
 ?>

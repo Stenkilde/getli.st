@@ -2,8 +2,7 @@
 //Requires header.php to function
 require 'header.php';
 
-//Check if logged in
-$general->logged_out_protect();
+//Define login info
 $user 		= $users->userdata($_SESSION['id']);
 $email 		= $user['email'];
 ?>

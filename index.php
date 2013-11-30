@@ -3,7 +3,7 @@
 require 'header.php';
 
 //Check if logged in
-//$general->logged_in_protect();
+$general->logged_in_protect();
 ?>
 	<div class="app">
 		<div class="popup-container">
