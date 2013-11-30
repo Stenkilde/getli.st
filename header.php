@@ -7,7 +7,7 @@ require 'backend/init.php';
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Index 1</title>
+	<title><?php echo $sitename . ' - ' . $sitedesc; ?></title>
 	<meta name="author" content="" />
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />

@@ -23,4 +23,7 @@ require 'login.php';
 $general->logged_in_protect();
 $general->logged_out_protect();
 
+//System Variables
+$sitename = "Getli.st";
+$sitedesc = "The List of the Future";
 ?>
