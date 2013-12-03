@@ -19,21 +19,24 @@
  <!--[if IE 9]><body class="ie ie9"><![endif]-->
  <!--[if !IE]><!--><body><!--<![endif]-->
  <div class="app">
- 	<h1>Goodmorning<!-- (Skal skifte alt efter hvad tid på dagen det er) --> <?php echo $email . '!'; ?></h1>
- 	<a href="logout.php">Logout</a>
-
- 	<section class="row">
- 		<div class="listShower column large-12">
- 			<ul class="activeLists">
- 				<li><a href="#">Morgenamds indkøb</a></li>
- 				<li><a href="#">Indkøb til Fest</a></li>
- 				<li><a href="#">Liste Nummer 3</a></li>
- 				<li><a href="#">4</a></li>
- 				<li><a href="#">5</a></li>
- 			</ul>
- 		</div>
- 	</section>
- </div>
+	<div class="container main-block">
+	 	<header class="header">
+			<img class="logo" src="img/getlistlogo.svg">
+	 		<h1>Goodmorning<!-- (Skal skifte alt efter hvad tid på dagen det er) --> <?php echo $email . '!'; ?></h1>
+	 		<a href="logout.php">Logout</a>
+		</header>
+		 	<section class="row">
+		 		<div class="listShower column large-12">
+		 			<ul class="activeLists">
+		 				<li><a href="#">Morgenamds indkøb</a></li>
+		 				<li><a href="#">Indkøb til Fest</a></li>
+		 				<li><a href="#">Liste Nummer 3</a></li>
+		 				<li><a href="#">4</a></li>
+		 				<li><a href="#">5</a></li>
+		 			</ul>
+		 		</div>
+		 	</section>
+ 	</div>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/vendor/jquery.min.js"><\/script>')</script>
