@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8" />
+ 	<title>Index 1</title>
+ 	<meta name="author" content="" />
+ 	<meta name="keywords" content="" />
+ 	<meta name="description" content="" />
+ 	<meta name="HandheldFriendly" content="True" />
+ 	<meta name="MobileOptimized" content="640" />
+ 	<meta name="format-detection" content="telephone=no" />
+ 	<meta http-equiv="cleartype" content="on" />
+ 	<meta http-equiv="x-dns-prefetch-control" content="on" />
+ 	<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+ 	<link rel="stylesheet" href="../css/styles.css" />
+ </head>
+ <!--[if lt IE 8]><body class="ie ie7"><![endif]-->
+ <!--[if IE 8]><body class="ie ie8"><![endif]-->
+ <!--[if IE 9]><body class="ie ie9"><![endif]-->
+ <!--[if !IE]><!--><body><!--<![endif]-->
+ <div class="app">
+ 	<h1>Goodmorning<!-- (Skal skifte alt efter hvad tid på dagen det er) --> <?php echo $email . '!'; ?></h1>
+ 	<a href="logout.php">Logout</a>
+
+ 	<section class="row">
+ 		<div class="listShower column large-12">
+ 			<ul class="activeLists">
+ 				<li><a href="#">Morgenamds indkøb</a></li>
+ 				<li><a href="#">Indkøb til Fest</a></li>
+ 				<li><a href="#">Liste Nummer 3</a></li>
+ 				<li><a href="#">4</a></li>
+ 				<li><a href="#">5</a></li>
+ 			</ul>
+ 		</div>
+ 	</section>
+ </div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery.min.js"><\/script>')</script>
+<!--[if IE]><script src="/js/vendor/PIE.js"></script><![endif]-->
+<script src="js/app.js"></script>
+<script>
+$("#optin").click(function(){
+	$(".popup-container").fadeIn('slow');
+});
+$(".ui-btn-close").click(function(){
+	$(".popup-container").fadeOut('slow');
+});
+</script>
+</body>
+</html>
