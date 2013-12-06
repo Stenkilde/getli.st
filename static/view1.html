@@ -20,48 +20,19 @@
  <!--[if !IE]><!--><body><!--<![endif]-->
  <div class="app">
 	<div class="container main-block">
-	 	<header class="header">
+	 	<header class="header centered">
 			<img class="logo" src="../img/getlistlogo.svg">
-	 		<h1>Goodmorning<!-- (Skal skifte alt efter hvad tid på dagen det er) --> <?php echo $email . '!'; ?></h1>
-	 		<a href="logout.php">Logout</a>
 		</header>
-		<div class="off-canvas-wrap">
-			<div class="inner-wrap">
+		<section class="row userBar">
+			<div class="column large-6">
+				 <h1 class="welcome-txt">Goodmorning John Smith<!-- (Skal skifte alt efter hvad tid på dagen det er) --> <?php echo $email . '!'; ?></h1>
+		 		<a class="btn-small btn-logout" href="logout.php">Logout</a>
+		 	</div>
+	 	</section>
 
-				<a class="left-off-canvas-toggle">Menu</a> 
-
-				<!-- Off Canvas Menu -->
-				<aside class="left-off-canvas-menu">
-					<!-- whatever you want goes here -->
-					<ul>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 1</a></li>
-					</ul>
-				</aside>
-				<!-- main content goes here -->
-				<!-- close the off-canvas menu -->
-				<a class="exit-off-canvas"></a>
-			</div><!-- Inner wrap ends here -->
-		</div><!-- Off canvas wrap ends here -->
-
-
-		 	<section class="row">
+		 	<section class="row centered">
 		 		<div class="listShower column large-12">
-		 			<h2>Your lists</h2>
+		 			<h2 class="yourLists">Your lists</h2>
 		 			<ul class="activeLists">
 		 				<li><a href="#">Morgenamds indkøb</a></li>
 		 				<li><a href="#">Indkøb til Fest</a></li>
@@ -76,8 +47,8 @@
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
-<script src="..js/cores/foundation.min.js"></script>
-<script src="..js/app.js"></script>
+<script src="../js/cores/foundation.min.js"></script>
+<script src="../js/app.js"></script>
 <script>
 $(document).foundation();
 

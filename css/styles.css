@@ -103,6 +103,11 @@ img {
 
 .app {
   padding: 15px; }
+  @media only screen and (min-width: 768px) {
+    .app {
+      width: 1024px;
+      margin: 0 auto;
+      overflow-x: hidden; } }
 
 /* ------------------------------------------ *\
     $font import
@@ -190,7 +195,24 @@ p {
   color: #fff;
   border: none;
   font-family: "arial";
-  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+.btn-small {
+  min-height: 48px;
+  padding: 4px 12px;
+  font-size: 0.875em;
+  line-height: 20px;
+  color: #fff;
+  border: none;
+  font-family: "arial";
   text-decoration: none;
   cursor: pointer;
   -webkit-appearance: none;
@@ -219,6 +241,15 @@ p {
 .btn-danger {
   background-color: #c95a5d; }
   .btn-danger:hover {
+    background-color: #bd362f; }
+
+.btn-logout {
+  width: 10%;
+  line-height: 40px;
+  text-align: center;
+  float: right;
+  background-color: #c95a5d; }
+  .btn-logout:hover {
     background-color: #bd362f; }
 
 .popup-container {
@@ -270,7 +301,16 @@ ul {
   /*This is a UL reset*/
   text-decoration: none;
   list-style-type: none;
-  color: #fff; }
+  color: #fff;
+  padding: 0; }
+
+.listShower {
+  width: 70%;
+  margin: 0 auto;
+  border: solid 2px pink; }
+
+.yourLists {
+  font-size: 50px; }
 
 .login-module {
   position: relative; }
@@ -301,6 +341,17 @@ ul {
 
 .logo {
   max-width: 300px; }
+
+.userBar {
+  *zoom: 1;
+  height: 80px; }
+  .userBar:before, .userBar:after {
+    content: " ";
+    display: table; }
+  .userBar:after {
+    clear: both; }
+  .userBar .welcome-txt {
+    float: left; }
 
 /*
  * Css for js interaktion states

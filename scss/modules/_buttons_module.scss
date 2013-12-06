@@ -7,11 +7,29 @@
 	color: #fff;
 	border: none; // Border removal is for input fields
 	font-family: $family-arial;
-	text-align: center;
 	text-decoration:none;
 	cursor: pointer;
 	-webkit-appearance: none;
     border-radius: 0;
+	-o-transition:.2s;
+	-ms-transition:.2s;
+	-moz-transition:.2s;
+	-webkit-transition:.2s;
+	transition:.2s;
+}
+
+.btn-small {
+	min-height: 48px;
+	padding: $btn-padding;
+	font-size: $btn-font-size;
+	line-height: 20px;
+	color: #fff;
+	border: none;
+	font-family: $family-arial;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+	border-radius: 0;
 	-o-transition:.2s;
 	-ms-transition:.2s;
 	-moz-transition:.2s;
@@ -44,6 +62,17 @@
 
 
 .btn-danger {
+	background-color: #c95a5d;
+	&:hover {
+		background-color: #bd362f;
+	}
+}
+
+.btn-logout {
+	width: 10%;
+	line-height: 40px;
+	text-align: center;
+	float: right;
 	background-color: #c95a5d;
 	&:hover {
 		background-color: #bd362f;

@@ -197,5 +197,10 @@ img {
 }
 
 .app {
+  @media #{$media-small}{ 
+    width: 1024px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
   padding: 15px;
 }
