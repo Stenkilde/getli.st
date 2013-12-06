@@ -21,12 +21,47 @@
  <div class="app">
 	<div class="container main-block">
 	 	<header class="header">
-			<img class="logo" src="img/getlistlogo.svg">
+			<img class="logo" src="../img/getlistlogo.svg">
 	 		<h1>Goodmorning<!-- (Skal skifte alt efter hvad tid på dagen det er) --> <?php echo $email . '!'; ?></h1>
 	 		<a href="logout.php">Logout</a>
 		</header>
+		<div class="off-canvas-wrap">
+			<div class="inner-wrap">
+
+				<a class="left-off-canvas-toggle">Menu</a> 
+
+				<!-- Off Canvas Menu -->
+				<aside class="left-off-canvas-menu">
+					<!-- whatever you want goes here -->
+					<ul>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+					</ul>
+				</aside>
+				<!-- main content goes here -->
+				<!-- close the off-canvas menu -->
+				<a class="exit-off-canvas"></a>
+			</div><!-- Inner wrap ends here -->
+		</div><!-- Off canvas wrap ends here -->
+
+
 		 	<section class="row">
 		 		<div class="listShower column large-12">
+		 			<h2>Your lists</h2>
 		 			<ul class="activeLists">
 		 				<li><a href="#">Morgenamds indkøb</a></li>
 		 				<li><a href="#">Indkøb til Fest</a></li>
@@ -34,21 +69,63 @@
 		 				<li><a href="#">4</a></li>
 		 				<li><a href="#">5</a></li>
 		 			</ul>
+		 				<div class="selectorOrbs"></div>
 		 		</div>
 		 	</section>
  	</div>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/vendor/jquery.min.js"><\/script>')</script>
-<!--[if IE]><script src="/js/vendor/PIE.js"></script><![endif]-->
-<script src="js/app.js"></script>
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
+<script src="..js/cores/foundation.min.js"></script>
+<script src="..js/app.js"></script>
 <script>
+$(document).foundation();
+
 $("#optin").click(function(){
 	$(".popup-container").fadeIn('slow');
 });
 $(".ui-btn-close").click(function(){
 	$(".popup-container").fadeOut('slow');
 });
+
+;(function ($, window, document, undefined) {
+  'use strict';
+
+  Foundation.libs.offcanvas = {
+    name : 'offcanvas',
+
+    version : '5.0.0',
+
+    settings : {},
+
+    init : function (scope, method, options) {
+      this.events();
+    },
+
+    events : function () {
+      $(this.scope).off('.offcanvas')
+        .on('click.fndtn.offcanvas', '.left-off-canvas-toggle', function (e) {
+          e.preventDefault();
+          $(this).closest('.off-canvas-wrap').toggleClass('move-right');
+        })
+        .on('click.fndtn.offcanvas', '.exit-off-canvas', function (e) {
+          e.preventDefault();
+          $(".off-canvas-wrap").removeClass("move-right");
+        })
+        .on('click.fndtn.offcanvas', '.right-off-canvas-toggle', function (e) {
+          e.preventDefault();
+          $(this).closest(".off-canvas-wrap").toggleClass("move-left");
+        })
+        .on('click.fndtn.offcanvas', '.exit-off-canvas', function (e) {
+          e.preventDefault();
+          $(".off-canvas-wrap").removeClass("move-left");
+        });
+    },
+
+    reflow : function () {}
+  };
+}(jQuery, this, this.document));
+
 </script>
 </body>
 </html>
