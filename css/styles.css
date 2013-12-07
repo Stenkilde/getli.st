@@ -22,33 +22,41 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   padding: 0;
   margin: 0;
   line-height: 1;
-  position: relative; }
+  position: relative;
+}
 
 img, object, embed {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 object, embed {
-  height: 100%; }
+  height: 100%;
+}
 
 img {
   -ms-interpolation-mode: bicubic;
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 .app {
-  padding: 15px; }
-  @media only screen and (min-width: 768px) {
-    .app {
-      width: 1024px;
-      margin: 0 auto;
-      overflow-x: hidden; } }
+  padding: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .app {
+    width: 1024px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+}
 
 /* ------------------------------------------ *\
     $font import
@@ -62,47 +70,55 @@ img {
 */
 html, body {
   font-size: 100%;
-  line-height: 150%; }
+  line-height: 150%;
+}
 
 h1, .alpha {
   font-size: 1.625em;
   line-height: 1;
   color: #fff;
-  font-family: arial; }
+  font-family: arial;
+}
 
 h2, .beta {
   font-size: 1.25em;
   line-height: 1;
   color: #fff;
-  font-family: arial; }
+  font-family: arial;
+}
 
 h3, .gamma {
   font-size: 1.125em;
   line-height: 1;
   color: #fff;
-  font-family: arial; }
+  font-family: arial;
+}
 
 h4, .delta {
   font-size: 1em;
   line-height: 1;
   color: #fff;
-  font-family: arial; }
+  font-family: arial;
+}
 
 h5, .epsilon {
   font-size: 0.875em;
   line-height: 1;
   color: #fff;
-  font-family: arial; }
+  font-family: arial;
+}
 
 h6, .zeta {
   font-size: 0.75em;
   line-height: 1;
   color: #fff;
-  font-family: arial; }
+  font-family: arial;
+}
 
 a {
   color: #fff;
-  font-family: arial; }
+  font-family: arial;
+}
 
 /* ------------------------------------------ *\
     $Icon Fonts
@@ -115,7 +131,8 @@ a {
   src: url("../fonts/getlist.eot");
   src: url("../fonts/getlist.eot?#iefix") format("embedded-opentype"), url("../fonts/getlist.ttf") format("truetype"), url("../fonts/getlist.woff") format("woff"), url("../fonts/getlist.svg#getlist") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'getlist';
@@ -127,19 +144,24 @@ a {
   line-height: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .icon-arrow-left:before {
-  content: "\e600"; }
+  content: "\e600";
+}
 
 .icon-burger-menu:before {
-  content: "\e601"; }
+  content: "\e601";
+}
 
 .icon-plus:before {
-  content: "\e602"; }
+  content: "\e602";
+}
 
 .icon-cross:before {
-  content: "\e603"; }
+  content: "\e603";
+}
 
 /* ------------------------------------------ *\
     $Aditional font styling
@@ -150,13 +172,16 @@ a {
 .footer {
   width: 100%;
   max-height: 80px;
-  text-align: center; }
-  .footer img {
-    height: 80px; }
+  text-align: center;
+}
+.footer img {
+  height: 80px;
+}
 
 p {
   font-family: helvetica;
-  line-height: 150%; }
+  line-height: 150%;
+}
 
 .btn {
   width: 100%;
@@ -175,7 +200,8 @@ p {
   -ms-transition: .2s;
   -moz-transition: .2s;
   -webkit-transition: .2s;
-  transition: .2s; }
+  transition: .2s;
+}
 
 .btn-small {
   min-height: 48px;
@@ -193,36 +219,47 @@ p {
   -ms-transition: .2s;
   -moz-transition: .2s;
   -webkit-transition: .2s;
-  transition: .2s; }
+  transition: .2s;
+}
 
 .btn-login {
-  background-color: #4097C8; }
-  .btn-login:hover {
-    background-color: #246DA3; }
+  background-color: #4097C8;
+}
+.btn-login:hover {
+  background-color: #246DA3;
+}
 
 .btn-succes {
-  background-color: #1abc9c; }
-  .btn-succes:hover {
-    background-color: #16a085; }
+  background-color: #1abc9c;
+}
+.btn-succes:hover {
+  background-color: #16a085;
+}
 
 .btn-optin {
-  background-color: #ffcc00; }
-  .btn-optin:hover {
-    background-color: #d2b231; }
+  background-color: #ffcc00;
+}
+.btn-optin:hover {
+  background-color: #d2b231;
+}
 
 .btn-danger {
-  background-color: #c95a5d; }
-  .btn-danger:hover {
-    background-color: #bd362f; }
+  background-color: #c95a5d;
+}
+.btn-danger:hover {
+  background-color: #bd362f;
+}
 
 .btn-logout {
   width: 10%;
   line-height: 40px;
   text-align: center;
   float: right;
-  background-color: #c95a5d; }
-  .btn-logout:hover {
-    background-color: #bd362f; }
+  background-color: #c95a5d;
+}
+.btn-logout:hover {
+  background-color: #bd362f;
+}
 
 .popup-container {
   position: absolute;
@@ -234,7 +271,8 @@ p {
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  display: none; }
+  display: none;
+}
 
 .popup {
   width: 330px;
@@ -248,10 +286,12 @@ p {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-  .popup h4 {
-    font-family: arial;
-    font-size: 0.875em; }
+  transform: translate(-50%, -50%);
+}
+.popup h4 {
+  font-family: arial;
+  font-size: 0.875em;
+}
 
 .ui-btn-close {
   position: absolute;
@@ -262,68 +302,94 @@ p {
   height: 30px;
   z-index: 5;
   background-color: #fff;
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
 .icon-close:before {
   position: absolute;
   top: 7px;
-  left: 6px; }
+  left: 6px;
+}
 
 ul {
   /*This is a UL reset*/
   text-decoration: none;
   list-style-type: none;
   color: #fff;
-  padding: 0; }
+  padding: 0;
+}
 
 .listShower {
   width: 70%;
   margin: 0 auto;
-  border: solid 2px pink; }
+  border: solid 2px pink;
+}
 
 .yourLists {
-  font-size: 50px; }
+  font-size: 50px;
+}
+
+.listItem {
+  width: 70%;
+  line-height: 50px;
+  margin: 20px auto;
+}
+.listItem .icon-arrow-left {
+  background-color: #009d9f;
+}
 
 .login-module {
-  position: relative; }
-  .login-module .login {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    font-size: 20px;
-    margin: 10px 0; }
-  .login-module #account-exists,
-  .login-module #account-none {
-    text-decoration: none;
-    color: #fff; }
-    .login-module #account-exists:hover,
-    .login-module #account-none:hover {
-      text-decoration: underline; }
-  .login-module .create-profile,
-  .login-module .login-user {
-    display: none;
-    max-width: 350px;
-    margin: 0 auto; }
-    .login-module .create-profile.is-visible,
-    .login-module .login-user.is-visible {
-      display: block; }
+  position: relative;
+}
+.login-module .login {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.login-module #account-exists,
+.login-module #account-none {
+  text-decoration: none;
+  color: #fff;
+}
+.login-module #account-exists:hover,
+.login-module #account-none:hover {
+  text-decoration: underline;
+}
+.login-module .create-profile,
+.login-module .login-user {
+  display: none;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.login-module .create-profile.is-visible,
+.login-module .login-user.is-visible {
+  display: block;
+}
 
 .centered {
-  text-align: center; }
+  text-align: center;
+}
 
 .logo {
-  max-width: 300px; }
+  max-width: 300px;
+}
 
 .userBar {
   *zoom: 1;
-  height: 80px; }
-  .userBar:before, .userBar:after {
-    content: " ";
-    display: table; }
-  .userBar:after {
-    clear: both; }
-  .userBar .welcome-txt {
-    float: left; }
+  height: 80px;
+}
+.userBar:before, .userBar:after {
+  content: " ";
+  display: table;
+}
+.userBar:after {
+  clear: both;
+}
+.userBar .welcome-txt {
+  float: left;
+}
 
 /*
  * Css for js interaktion states
@@ -346,38 +412,49 @@ ul {
 .main-block {
   width: 100%;
   max-width: 1030px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .loginarea-module {
   width: 100%;
   max-width: 512px;
-  display: inline-block; }
-  .loginarea-module .login {
-    margin: 0 auto;
-    width: 50%;
-    font-size: 0.9375em; }
+  display: inline-block;
+}
+.loginarea-module .login {
+  margin: 0 auto;
+  width: 50%;
+  font-size: 0.9375em;
+}
 
 .information-module {
   width: 100%;
   max-width: 512px;
-  display: inline-block; }
+  display: inline-block;
+}
 
 .footer {
-  background-color: #303030; }
+  background-color: #303030;
+}
 
 .clearfix {
-  *zoom: 1; }
-  .clearfix:before, .clearfix:after {
-    content: " ";
-    display: table; }
-  .clearfix:after {
-    clear: both; }
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
 
 body {
-  background-color: #272727; }
+  background-color: #272727;
+}
 
 .information-module {
-  padding: 50px; }
+  padding: 50px;
+}
 
 .information-text {
-  color: #fff; }
+  color: #fff;
+}

@@ -18,3 +18,13 @@ ul {
 
 .activeLists {
 }
+
+.listItem {
+	width: 70%;
+	line-height: 50px;
+	margin: 20px auto;
+	
+	.icon-arrow-left {
+		background-color: #009d9f;
+	}
+}
