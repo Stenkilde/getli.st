@@ -20,6 +20,7 @@ $errors		= array();
 //Require Backend System
 require 'register.php';
 require 'login.php';
+require 'activate.php';
 
 //Logged in or logged out redirect check
 $general->logged_in_protect();

@@ -45,7 +45,14 @@ class Users {
 		try {
 			$query->execute();
 
-			mail($email, 'Please activate your account', "Hello,\r\nThank you for registering with us. Please visit the link below so we can activate your account:\r\n\r\nhttp://getli.st/activate.php?email=" . $email . "&email_code=" . $email_code . "\r\n\r\n-- The Getli.st Team");
+
+
+			$to 		= $email;
+			$subject	= 'Please activate your account';
+			$message 	= "Hello,\r\nThank you for registering with us. Please visit the link below so we can activate your account:\r\n\r\nhttp://getli.st/index.php?activate=yes&email=" . $email . "&email_code=" . $activationHash . "\r\n\r\n- The Getli.st Team";
+			$headers	= 'From: noreply@getli.st';
+
+			mail($to, $subject, $message, $headers);
 		} catch(PODException $e) {
 			die($e->getMessage());
 		}

@@ -21,9 +21,6 @@ if(isset($_GET['activate']) === true && $_GET['activate'] == 'yes') {
 			header('Location: index.php?activate=yes');
 			exit();
 		}
-} else {
-	header('Location: index.php');
-	exit();
 }
 
 ?>
