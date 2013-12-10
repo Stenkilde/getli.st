@@ -20276,8 +20276,8 @@ a {
 
 @font-face {
   font-family: 'getlist';
-  src: url("../../fonts/getlist.eot");
-  src: url("../../fonts/getlist.eot?#iefix") format("embedded-opentype"), url("../../fonts/getlist.ttf") format("truetype"), url("../../fonts/getlist.woff") format("woff"), url("../../fonts/getlist.svg#getlist") format("svg");
+  src: url("/fonts/getlist.eot");
+  src: url("/fonts/getlist.eot?#iefix") format("embedded-opentype"), url("/fonts/getlist.ttf") format("truetype"), url("/fonts/getlist.woff") format("woff"), url("/fonts/getlist.svg#getlist") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -20494,9 +20494,12 @@ ul {
 }
 
 .listShower {
-  width: 70%;
-  margin: 0 auto;
+  width: 90%;
   border: solid 2px pink;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 @media -sass-debug-info {
@@ -20505,7 +20508,7 @@ ul {
   }
 
   line {
-    font-family: \0000315;
+    font-family: \0000318;
   }
 }
 
@@ -20519,14 +20522,14 @@ ul {
   }
 
   line {
-    font-family: \0000322;
+    font-family: \0000325;
   }
 }
 
 .listItem {
   width: 70%;
   line-height: 50px;
-  margin: 20px auto;
+  white-space: nowrap;
 }
 
 @media -sass-debug-info {
@@ -20535,11 +20538,14 @@ ul {
   }
 
   line {
-    font-family: \0000327;
+    font-family: \0000330;
   }
 }
 
 .listItem .icon-arrow-left {
+  font-size: 30px;
+  padding: 7px;
+  margin-right: 10px;
   background-color: #009d9f;
 }
 
@@ -20794,7 +20800,6 @@ ul {
 }
 
 .btn-logout {
-  width: 10%;
   line-height: 40px;
   text-align: center;
   float: right;
@@ -20807,7 +20812,7 @@ ul {
   }
 
   line {
-    font-family: \0000377;
+    font-family: \0000376;
   }
 }
 

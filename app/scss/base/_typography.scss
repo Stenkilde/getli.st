@@ -98,11 +98,11 @@ a {
 
 @font-face {
     font-family: 'getlist';
-    src:url('../../fonts/getlist.eot');
-    src:url('../../fonts/getlist.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/getlist.ttf') format('truetype'),
-        url('../../fonts/getlist.woff') format('woff'),
-        url('../../fonts/getlist.svg#getlist') format('svg');
+    src:url('/fonts/getlist.eot');
+    src:url('/fonts/getlist.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/getlist.ttf') format('truetype'),
+        url('/fonts/getlist.woff') format('woff'),
+        url('/fonts/getlist.svg#getlist') format('svg');
     font-weight: normal;
     font-style: normal;
 }

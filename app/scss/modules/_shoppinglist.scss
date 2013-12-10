@@ -7,9 +7,12 @@ ul {
 }
 
 .listShower {
-	width: 70%;
-	margin: 0 auto;
+	width: 90%;
 	border: solid 2px pink;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
 }
 
 .yourLists {
@@ -22,9 +25,12 @@ ul {
 .listItem {
 	width: 70%;
 	line-height: 50px;
-	margin: 20px auto;
+	white-space: nowrap;
 	
 	.icon-arrow-left {
+		font-size: 30px;
+		padding: 7px;
+		margin-right: 10px;
 		background-color: #009d9f;
 	}
 }
