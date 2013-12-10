@@ -1,5 +1,28 @@
-#Frontend Boilerplate
+# Nodes Rapid Prototype generator
 
-##2013/08/01 - Version 0.0:
+Yeoman generator that scaffolds out a front-end base for rapid prototyping.
 
- 1. Started work on a complete overhaul of the front-end boilerplate
+## Features
+
+* CSS Autoprefixing
+* Built-in live-reload server
+* Built-in multi-device preview server with [browser-sync](https://github.com/shakyShane/browser-sync).
+* Automatically compile Sass and Compass
+* Automatically wire up your Bower components with [bower-install](https://github.com/stephenplusplus/grunt-bower-install).
+* Zurb's [Foundation 5](http://foundation.zurb.com/) wired in with bower 
+* Nodes Front-end modular SCSS methology
+
+## Getting Started
+
+- Install: `npm install -g git+https://github.com/dennishn/generator-prototype.git`
+- Run: `yo prototype`
+- Type in your IP adress (windows: `ipconfig` | mac/linux: `ifconfig`
+- Run `grunt serve` to use the live-reload server
+- Run `grunt browser-sync` to use the multi-device preview server
+
+
+## Options
+
+* `--skip-install`
+
+  Skips the automatic execution of `bower` and `npm` after scaffolding has finished.

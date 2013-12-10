@@ -1,0 +1,49 @@
+/*
+* Layout for getlist over all
+*/
+
+.main-block { 
+	width:100%;
+	margin:0 auto;
+}
+
+.loginarea-module {
+	width:100%;
+	max-width:512px;
+	display:inline-block;
+	.login {
+		margin:0 auto;
+		width:50%;
+		font-size: emCalc(15);
+	}
+}
+ 
+.information-module {
+	width: 100%;
+	max-width: 512px;
+	display: inline-block;
+}
+
+.footer {
+	background-color: $secondary-dark; 
+}
+
+
+.clearfix {
+	@include clearfix;
+}
+
+body {
+	background-color: $main-dark; 
+}
+
+.main-block {
+}
+
+.information-module {
+	padding:50px;
+}
+
+.information-text {
+	color:#fff;
+}

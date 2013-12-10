@@ -1,0 +1,7 @@
+.userBar {
+	@include clearfix();
+	height: 80px;
+	.welcome-txt {
+		float: left;
+	}
+}
