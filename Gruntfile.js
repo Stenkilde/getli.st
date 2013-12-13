@@ -1,4 +1,4 @@
-// Generated on 2013-12-09 using generator-prototype 0.0.0
+// Generated on 2013-12-11 using generator-prototype 0.0.0
 'use strict';
 
 // # Globbing
@@ -18,7 +18,7 @@ module.exports = function (grunt) {
         yeoman: {
             app: 'app',
             dist: 'dist',
-            ip: '192.168.43.144'
+            ip: '192.168.87.109'
         },
         watch: {
             compass: {
