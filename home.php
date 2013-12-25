@@ -3,8 +3,10 @@
 require 'header.php';
 
 //Define login info
-$user 		= $users->userdata($_SESSION['id']);
-$email 		= $user['email'];
+$user 			= $users->userdata($_SESSION['id']);
+$email 			= $user['email'];
+$userLists		= $lists->get_users_lists($user['uID']);
+$userListsCount	= count($userLists);
 ?>
 
 
@@ -14,11 +16,19 @@ $email 		= $user['email'];
 <section class="row">
 	<div class="listShower column large-12">
 		<ul class="activeLists">
-			<li><a href="#">Morgenamds indkøb</a></li>
-			<li><a href="#">Indkøb til Fest</a></li>
-			<li><a href="#">Liste Nummer 3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">5</a></li>
+			<?php
+
+			if($userListsCount > 0) {
+
+				foreach($userLists as $userList) {
+					echo '<li><a href="#">' . $userList['listName'] . '</a></li>';
+				}
+
+			} else {
+				echo '<li>You don\'t have any lists right now. <a href="#">Create one now</a></li>';
+			}
+
+			?>
 		</ul>
 	</div>
 </section>
